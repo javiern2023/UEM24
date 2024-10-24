@@ -75,9 +75,7 @@ public class EjericioNotasArrays {
 						}
 						System.out.println("La media de la clase es: "+(media/alumnos));
 					break;
-				case 5: System.out.println("Hasta pronto");
-					break;
-				case 6: System.out.println("Dime el dni del alumno");
+				case 5: System.out.println("Dime el dni del alumno");
 						dni=sc.next();
 						for(int i=0;i<arrayDni.length;i++) {
 							if(arrayDni[i].equals(dni)) {
@@ -89,9 +87,11 @@ public class EjericioNotasArrays {
 						if(!encontrado) System.out.println("El alumno no existe");
 						else encontrado=false;
 					break;
-				case 7: for(int i=0;i<arrayDni.length;i++) {
-							System.out.print("Dni "+arrayDni[i]+" tiene una nota de "+arrayNotas[i]);
+				case 6: for(int i=0;i<arrayDni.length;i++) {
+							System.out.println("Dni "+arrayDni[i]+" tiene una nota de "+arrayNotas[i]);
 						}
+					break;
+				case 7: System.out.println("Hasta pronto");
 					break;
 				default: System.out.println("Opcion incorrecta");
 			}
