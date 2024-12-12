@@ -7,6 +7,7 @@ public class Cuenta {
 	
 	protected Cuenta(String titular) {
 		this.titular = titular;
+		cantidad=100;
 	}
 
 	protected Cuenta(String titular, double cantidad) {

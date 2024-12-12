@@ -16,10 +16,11 @@ public class Principal {
 		/*System.out.println("Dime el nombre del primer titular");
 		nombre=sc.next();
 		Cuenta c1 = new Cuenta(nombre);
-		Cuentas.add(c1);*/
+		Cuentas.add(c1);
 		
 		
-		/*System.out.println("Dime el nombre del titular a buscar");
+		
+		System.out.println("Dime el nombre del titular a buscar");
 		nombre=sc.next();
 		//bucle for each
 	    for (Cuenta c: Cuentas) {
