@@ -3,6 +3,7 @@
 public class Persona {
 	// Propiedades
 	String nombre, dni, apellidos, direccion;
+	double saldo;
 
 	// Constructores
 	
