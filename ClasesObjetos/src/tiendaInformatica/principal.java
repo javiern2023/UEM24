@@ -10,6 +10,9 @@ public class principal {
 		int opcionPrincipal, opcionGenerico;
 		Scanner sc = new Scanner(System.in);
 		ArrayList <Cliente> arrayClientes = new ArrayList <Cliente> ();
+		ArrayList <producto> arrayProductos = new ArrayList <producto> ();
+		ArrayList <proveedores> arrayProveedores = new ArrayList <proveedores> ();
+		ArrayList <compra> arrayCompras = new ArrayList <compra> ();
 		do {
 			menuPrincipal();
 			opcionPrincipal=sc.nextInt();
@@ -28,7 +31,7 @@ public class principal {
 					break;
 				case 4:
 					break;
-				case 5:
+				case 5: compraCliente(sc, arrayClientes, arrayCompras);
 					break;
 				case 6: System.out.println("Hasta pronto");
 					break;
@@ -45,7 +48,7 @@ public class principal {
 		System.out.println("2.- Productos");
 		System.out.println("3.- Proveedores");
 		System.out.println("4.- Suministros");
-		System.out.println("5.- Ventas");
+		System.out.println("5.- Compras del cliente");
 		System.out.println("6.- Salir");
 	}
 	
@@ -105,4 +108,31 @@ public class principal {
 		}
 	}
 	
+	public static void compraCliente(Scanner sc, ArrayList<Cliente> arrayClientes, ArrayList<compra> arrayCompras) {
+		boolean encontrado=false;
+		String id_cliente;
+		compra com = new compra();
+		System.out.print("Dime el id: ");
+		id_cliente=sc.next();
+		for(Cliente c1: arrayClientes) {
+			if(c1.getId_cliente().equals(id_cliente)) {
+				arrayCompras.add(com);
+				encontrado=true;
+				break;
+			}
+		}
+		if(encontrado) {
+			
+			String opcion="salir";
+			do {
+				// Mostrar productos con su precio
+				// busco el producto en el for
+				// lo añado al array de compras
+				// actualizo el precio final de la compra
+				// pregunto si quiere seguir comprando o no
+			}while (!opcion.equals("salir"));
+			
+		}
+		else System.out.println("Usuario no registrado para hacer la compra");
+	}
 }
