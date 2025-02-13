@@ -25,4 +25,7 @@ public class Gestion {
 	protected void darAlta(int opcion) {
 		
 	}
+	protected void darBaja(int opcion) {
+		
+	}
 }
