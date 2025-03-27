@@ -39,7 +39,7 @@ public class Formulario {
                         System.out.println("Finalizado. Datos completados");
                     } else {
                         System.out.println("Faltan datos por rellenar.");
-                        mostrarMenu();
+                        opcion=0;
                     }
                     break;
                 default:
